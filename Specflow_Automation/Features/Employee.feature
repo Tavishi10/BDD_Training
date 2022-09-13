@@ -17,5 +17,5 @@ Scenario Outline: Add Valid Employee
   Then I should be navigated to personal details section with added employee records
 Examples:
       | username | password | firstname | middlename | lastname | empid | toggle_login | acc_user | accpassword | confirm_password | status   |
-      | Admin    | Admin123 | Tavishi   | Dinesh     | Suvarna  | 101   | on           | Tavishi  | Tavishi123  | Tavishi123       | disabled |
-      | Admin    | Admin123 | Ruchita   | Mahendra   | Moon     | 102   | on           | Ruchi    | Ruchi123  ``| Ruchi123         | disabled |
+      | Admin    | admin123 | Tavishi   | Dinesh     | Suvarna  | 101   | on           | Tavishi  | Tavishi123  | Tavishi123       | disabled |
+      | Admin    | admin123 | Ruchita   | Mahendra   | Moon     | 102   | on           | Ruchi    | Ruchi123  ``| Ruchi123         | disabled |

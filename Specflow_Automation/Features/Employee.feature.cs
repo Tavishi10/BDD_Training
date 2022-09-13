@@ -84,8 +84,8 @@ namespace Specflow_Automation.Features
         [Xunit.SkippableTheoryAttribute(DisplayName="Add Valid Employee")]
         [Xunit.TraitAttribute("FeatureTitle", "Employee")]
         [Xunit.TraitAttribute("Description", "Add Valid Employee")]
-        [Xunit.InlineDataAttribute("Admin", "Admin123", "Tavishi", "Dinesh", "Suvarna", "101", "on", "Tavishi", "Tavishi123", "Tavishi123", "disabled", new string[0])]
-        [Xunit.InlineDataAttribute("Admin", "Admin123", "Ruchita", "Mahendra", "Moon", "102", "on", "Ruchi", "Ruchi123  ``", "Ruchi123", "disabled", new string[0])]
+        [Xunit.InlineDataAttribute("Admin", "admin123", "Tavishi", "Dinesh", "Suvarna", "101", "on", "Tavishi", "Tavishi123", "Tavishi123", "disabled", new string[0])]
+        [Xunit.InlineDataAttribute("Admin", "admin123", "Ruchita", "Mahendra", "Moon", "102", "on", "Ruchi", "Ruchi123  ``", "Ruchi123", "disabled", new string[0])]
         public void AddValidEmployee(string username, string password, string firstname, string middlename, string lastname, string empid, string toggle_Login, string acc_User, string accpassword, string confirm_Password, string status, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;

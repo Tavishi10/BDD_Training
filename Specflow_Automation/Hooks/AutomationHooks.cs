@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System;
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
 namespace Specflow_Automation.Hooks
 {
 	[Binding]
