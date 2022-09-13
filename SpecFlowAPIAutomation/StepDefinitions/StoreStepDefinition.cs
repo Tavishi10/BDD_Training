@@ -35,14 +35,15 @@ namespace Specflow_Automation.StepDefinitions
         [Then(@"I should get the message as '([^']*)'")]
         public void ThenIShouldGetTheMessageAs(string expectedMessage)
         {
+            string actualResponse = response.Content;
+            Assert.Contains(expectedMessage, actualResponse);
         }
 
         [Then(@"I should get the pet details in json format")]
         public void ThenIShouldGetThePetDetailsInJsonFormat()
         {
         }
-
-        
+       
     }
 }
 
