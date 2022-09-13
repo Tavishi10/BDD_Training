@@ -11,15 +11,6 @@ namespace Specflow_Automation.StepDefinitions
     {
         public string fName;
 
-        [Given(@"I have browser with orangehrm page")]
-        public void GivenIHaveBrowserWithOrangehrmPage()
-        {
-            AutomationHooks.driver = new ChromeDriver();
-            AutomationHooks.driver.Manage().Window.Maximize();
-            AutomationHooks.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            AutomationHooks.driver.Url = "https://opensource-demo.orangehrmlive.com/";
-        }
-
         [When(@"I click on PIM")]
         public void WhenIClickOnPIM()
         {
@@ -74,8 +65,8 @@ namespace Specflow_Automation.StepDefinitions
             AutomationHooks.driver.FindElement(By.XPath("//button[@type= 'submit']")).Click();
         }
 
-        [Then(@"I should navigate to add personal detail section with added employee")]
-        public void WhenIShouldNavigateToAddPersonalDetailSectionWithAddedEmployee()
+        [Then(@"I should be navigated to personal details section with added employee records")]
+        public void ThenIShouldBeNavigatedToPersonalDetailSectionWithAddedEmployeeRecords()
         {
             string actualFirstName = AutomationHooks.driver.FindElement(By.Name("firstName")).GetAttribute("value");
             Assert.Equal(fName, actualFirstName);
